@@ -60,6 +60,6 @@ def destroy():
 if __name__ == "__main__":
 	try:
 		setup(R, G, B)
-        loop()
+		loop()
 	except KeyboardInterrupt:
 		destroy()
