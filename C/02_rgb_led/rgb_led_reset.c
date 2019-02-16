@@ -34,6 +34,6 @@ int main(void)
 
 	ledInit();
     ledColorSet(0x01, 0x01, 0x01);
-    delay(100)
+    delay(100);
 	return 0;
 }
