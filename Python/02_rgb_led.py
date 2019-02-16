@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 
-colors = [0xFF0000, 0x00FF00, 0x0000FF, 0xFFFF00, 0xFF00FF, 0x00FFFF]
+colors = [0xFF0000, 0x00FF00, 0x0000FF]
 R = 11
 G = 12
 B = 13
@@ -60,6 +60,6 @@ def destroy():
 if __name__ == "__main__":
 	try:
 		setup(R, G, B)
-		loop()
+#        loop()
 	except KeyboardInterrupt:
 		destroy()
