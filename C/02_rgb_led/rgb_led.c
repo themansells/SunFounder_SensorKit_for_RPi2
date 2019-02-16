@@ -33,29 +33,15 @@ int main(void)
 	//printf("linker LedPin : GPIO %d(wiringPi pin)\n",LedPin); //when initialize wiring successfully,print message to screen
 
 	ledInit();
+    int iDelay = 250;
 
 	while(1){
 		ledColorSet(0xff,0x00,0x00);   //red	
-		delay(500);
+		delay(iDelay);
 		ledColorSet(0x00,0xff,0x00);   //green
-		delay(500);
+		delay(iDelay);
 		ledColorSet(0x00,0x00,0xff);   //blue
-		delay(500);
-
-		ledColorSet(0xff,0xff,0x00);   //yellow
-		delay(500);
-		ledColorSet(0xff,0x00,0xff);   //pick
-		delay(500);
-		ledColorSet(0xc0,0xff,0x3e);
-		delay(500);
-
-		ledColorSet(0x94,0x00,0xd3);
-		delay(500);
-		ledColorSet(0x76,0xee,0x00);
-		delay(500);
-		ledColorSet(0x00,0xc5,0xcd);	
-		delay(500);
-
+		delay(iDelay);
 	}
 
 	return 0;
