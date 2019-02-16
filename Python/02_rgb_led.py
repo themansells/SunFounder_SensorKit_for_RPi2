@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 
-colors = [0xFF0000, 0x00FF00, 0x0000FF, 0x0f000f]
+colors = [0xFF0000, 0x00FF00, 0x0000FF, 0x0F000F]
 R = 11
 G = 12
 B = 13
