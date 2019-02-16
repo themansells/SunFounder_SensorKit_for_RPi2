@@ -34,9 +34,9 @@ int main(void)
     softPwmStop(LedPinRed);
     softPwmStop(LedPinGreen);
     softPwmStop(LedPinBlue);
-    digitalWrite(LedPinRed, 0);
-    digitalWrite(LedPinGreen, 0);
-    digitalWrite(LedPinBlue, 0);
+    digitalWrite(LedPinRed, 1);
+    digitalWrite(LedPinGreen, 1);
+    digitalWrite(LedPinBlue, 1);
     
 //    ledColorSet(0xff, 0xff, 0xff);
     delay(100);
