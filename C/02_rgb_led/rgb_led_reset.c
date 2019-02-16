@@ -31,12 +31,9 @@ int main(void)
 		return 1; 
 	}
 	//printf("linker LedPin : GPIO %d(wiringPi pin)\n",LedPin); //when initialize wiring successfully,print message to screen
-    softPwmStop(LedPinRed);
-    softPwmStop(LedPinGreen);
-    softPwmStop(LedPinBlue);
-    digitalWrite(LedPinRed, 1);
-    digitalWrite(LedPinGreen, 1);
-    digitalWrite(LedPinBlue, 1);
+    digitalWrite(LedPinRed, HIGH);
+    digitalWrite(LedPinGreen, HIGH);
+    digitalWrite(LedPinBlue, HIGH);
     
 //    ledColorSet(0xff, 0xff, 0xff);
     delay(100);
