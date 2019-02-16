@@ -22,12 +22,6 @@ void ledColorSet(uchar r_val, uchar g_val, uchar b_val)
 	softPwmWrite(LedPinBlue,  b_val);
 }
 
-void ledStop(void) {
-    softPwmStop(LedPinRed);
-    softPwmStop(LedPinGreen);
-    softPwmStop(LedPinBlue);
-}
-
 int main(void)
 {
 	int i;
@@ -38,7 +32,8 @@ int main(void)
 	}
 	//printf("linker LedPin : GPIO %d(wiringPi pin)\n",LedPin); //when initialize wiring successfully,print message to screen
 
-    ledStop();
-    
+	ledInit();
+    ledColorSet(0xff, 0xff, 0xff);
+    delay(100);
 	return 0;
 }
