@@ -36,11 +36,11 @@ int main(void)
     int iDelay = 250;
 
 	while(1){
-		ledColorSet(0xff,0x00,0x00);   //red	
+		ledColorSet(0x00,0xff,0xff);   //red
 		delay(iDelay);
-		ledColorSet(0x00,0xff,0x00);   //green
+		ledColorSet(0xff,0x00,0xff);   //green
 		delay(iDelay);
-		ledColorSet(0x00,0x00,0xff);   //blue
+		ledColorSet(0xff,0xff,0x00);   //blue
 		delay(iDelay);
 	}
 
