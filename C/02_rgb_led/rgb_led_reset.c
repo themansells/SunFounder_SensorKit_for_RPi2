@@ -33,7 +33,7 @@ int main(void)
 	//printf("linker LedPin : GPIO %d(wiringPi pin)\n",LedPin); //when initialize wiring successfully,print message to screen
 
 	ledInit();
-    ledColorSet(0x01, 0x01, 0x01);
+    ledColorSet(0xff, 0x0f, 0x0f);
     delay(100);
 	return 0;
 }
